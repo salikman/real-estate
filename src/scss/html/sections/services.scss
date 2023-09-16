@@ -35,8 +35,6 @@
         background-size: cover;
 
         @media (min-width: 992px) {
-            height: 350px;
-
             &:nth-child(1) {
                 grid-area: a;
             }
