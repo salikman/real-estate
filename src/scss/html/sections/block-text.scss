@@ -1,0 +1,23 @@
+.block-text {
+    padding: 50px 0;
+
+    &__title {
+        margin-bottom: 40px;
+        @include adaptiv-font(32, 24);
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+            font-size: 18px;
+            line-height: 140%;
+        }
+        
+        a {
+            text-decoration: underline;
+        }
+    }
+}

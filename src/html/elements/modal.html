@@ -1,0 +1,31 @@
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h2 class="modal__title">Отправить сообщение</h2>
+        <span class="modal__close modal-close"><svg><use href="@img/icons/icons.svg#close"></use></svg></span>
+        <form class="form">
+            <div class="form__fields">
+                <label for="" class="form__box">
+                    <input type="text" placeholder="Имя*" required>
+                    <!-- <span class="form__error">Wanring</span> -->
+                </label>
+                <label for="" class="form__box">
+                    <input type="email" placeholder="Email*" required>
+                </label>
+                <label for="" class="form__box">
+                    <input type="tel" placeholder="Телефон*" required>
+                </label>
+                <label for="" class="form__box">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение*" required></textarea>
+                </label>
+                <label for="" class="form__box">
+                    <button type="submit">Отправить</button>
+                </label>
+            </div>
+
+            <div class="form__success">
+                <svg><use href="@img/icons/icons.svg#email-successfully"></use></svg>
+                <span>Ваше сообщение успешно отправлено!</span>
+            </div>
+        </form>
+    </div>
+</div>

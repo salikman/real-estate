@@ -1,0 +1,118 @@
+.modal {
+    width: 100%;
+    max-width: 530px;
+    border-radius: 10px;
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .modal__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .modal__close {
+        position: absolute;
+        top: 28px;
+        right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+
+        svg {
+           width: 19px;
+           height: 19px;
+           color: rgba(black, .4); 
+        }
+    }
+
+    .form {
+        width: 100%;
+
+        .form__box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .form__error {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            color: tomato;
+        }
+
+        .form__success {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            svg {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 20px;
+            }
+
+            span {
+                text-transform: capitalize;
+            }
+        }
+        
+        input, textarea {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 46px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 0 10px;
+            border: 1px solid rgba(#ABABAB, .5);
+            background-color: transparent;
+            color: #383b4f;
+            text-transform: capitalize;
+            font-size: 18px;
+            font-weight: 400;
+
+            &:focus {
+                border-bottom: 1px solid $firstAccentColor !important;
+                box-shadow: 0 1px 0 0 $firstAccentColor !important;
+            }
+
+            &:focus::-webkit-input-placeholder {
+                transition: all 0.3s linear;
+                -webkit-transform: translate(30px, 0);
+                transform: translate(30px, 0);
+                opacity: 0;
+            }
+
+            ::-webkit-input-placeholder {
+                
+            }
+        }
+        textarea {
+            height: 150px;
+            overflow: hidden;
+            padding: 10px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            height: 46px;
+            padding: 0 30px;
+            background-color: $firstAccentColor;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}

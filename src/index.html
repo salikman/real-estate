@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/base/header.html', {})
+        <main class="page">
+            <div data-observ></div>
+            
+            @@include('html/sections/intro.html')
+
+            <section class="filter-box">
+                <div class="filter-box__container">
+                    <div class="filter-box__wrapper">
+                        @@include('html/elements/filter.html')
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/sections/real-estate.html', {
+                title: 'Продажа недвижимости в Хуа Хине',
+                id1: 'tab1',
+                id2: 'tab2',
+                id3: 'tab3',
+                id4: 'tab4',
+                id5: 'tab5'
+            })
+            @@include('html/sections/real-estate.html', {
+                title: 'Аренда недвижимости в Хуа Хине',
+                id1: 'tab6',
+                id2: 'tab7',
+                id3: 'tab8',
+                id4: 'tab9',
+                id5: 'tab10'
+            })
+            @@include('html/sections/district.html')
+            @@include('html/sections/services.html')
+            @@include('html/sections/advantages.html')
+            @@include('html/sections/articles.html')
+            @@include('html/sections/seo-text.html')
+        </main>
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/elements/modal.html')
+
+    @@include('html/base/script.html', {})
+</body>
+</html>

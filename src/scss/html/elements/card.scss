@@ -1,0 +1,159 @@
+.card {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__btns {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__img {
+        position: relative;
+        padding-bottom: 56%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+
+        &:hover {text-decoration: underline;}
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__desc {
+        overflow: hidden;
+        color: #686868;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        max-height: 54px;
+    }
+
+    &__price {
+        padding-top: 10px;
+        border-top: 1px solid rgba(104, 104, 104, 0.10);
+        color: $firstAccentColor;
+        font-size: 20px;
+    }
+}
+
+.card-location {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__img {
+        position: relative;
+        padding-bottom: 56%;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    &__title {
+        font-size: 18px;
+    }
+
+    &__num {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 4px 10px;
+        border-radius: 4px;
+        border: 1px solid #1AD079;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        span {
+            color: #183546;
+        }
+    }
+}

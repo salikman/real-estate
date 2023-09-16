@@ -1,0 +1,121 @@
+.footer {
+    padding: 40px 0;
+    background: white;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @media (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            text-align: center;
+        }
+    }
+
+    &__col {
+        @media (max-width: 991px) {
+            &:nth-child(1) {
+                .footer__menu {display: none;}
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 60px;
+        margin-bottom: 40px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__boxtitle {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            font-size: 14px;
+
+            &:hover {text-decoration: underline;}
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        padding: 15px 30px;
+        border-radius: 5px;
+        background: $firstAccentColor;
+        color: white;
+        transition: $standartTrans;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        span {
+            color: #000;
+            font-size: 18px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        a {
+            display: flex;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-end;
+
+        @media (max-width: 991px) {
+            align-items: center;
+        }
+    }
+}

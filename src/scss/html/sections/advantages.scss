@@ -1,0 +1,48 @@
+.advantages {
+    padding: 50px 0;
+
+    &__title {
+        margin-bottom: 40px;
+        @include adaptiv-font(32, 24);
+
+        span {
+            color: $firstAccentColor;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .advantage {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        svg {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 30px;
+        }
+
+        span {
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+
+        p {
+            color: #183546;
+            line-height: 140%;
+        }
+    }
+}

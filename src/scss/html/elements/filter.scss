@@ -1,0 +1,120 @@
+.filter {
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 8px 29px 0px rgba(14, 83, 50, 0.10);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13px;
+        padding: 35px 33px;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        max-width: 400px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $firstAccentColor;
+        background: url('../img/icons/icons.svg#search') left no-repeat / contain;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        input {
+            width: 100%;
+
+            &::placeholder {color: #686868;}
+        }
+
+        
+    }
+
+    &__selects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px;
+        max-width: 400px;
+        width: 100%;
+
+        .justselect-wrapper {
+            width: 100%;
+        }
+
+        .justselect-title {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 46px;
+            padding-right: 25px;
+            border-color: $firstAccentColor;
+            color: #183546;
+            font-size: 16px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    &__switch {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 260px;
+        width: 100%;
+        height: 44px;
+        border-radius: 5px;
+        border: 1px solid #1AD079;
+        overflow: hidden;
+        cursor: pointer;
+
+        label {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                background: transparent;
+                color: #000;
+                font-weight: 500;
+                text-align: center;
+                line-height: 150%;
+                transition: $standartTrans;
+            }
+
+            .switch-input {
+                display: none;
+
+                &:checked ~ p {
+                    background: $firstAccentColor;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 200px;
+        width: 100%;
+        height: 44px;
+        border-radius: 5px;
+        background: $firstAccentColor;
+        color: white;
+        font-weight: 500;
+    }
+}

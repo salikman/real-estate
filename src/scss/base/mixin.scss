@@ -1,0 +1,244 @@
+// $colorPrimary: ;
+// $colorSecondary: ;
+$colorText: #333;
+
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+        url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+// Firefox
+* {
+    scrollbar-width: rem(8);
+    scrollbar-color: $firstAccentColor #d6d6d6;
+
+    // Chrome, Edge, and Safari
+    &::-webkit-scrollbar {
+        width: rem(8);
+        background-color: $whiteColor;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 rem(6) rgba(#000, 20%);
+        border-radius: 0;
+        background: rgba($blackColor, .8);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: rem(0);
+        border: 0 none #fff;
+        background-color: lighten($firstAccentColor, 10%);
+        transition: all 280ms ease-in-out;
+
+        &:hover {
+            background-color: $firstAccentColor;
+        }
+    }
+}
+
+// !TO PERCENT %:
+@function prc($pxOne, $pxTwo) {
+    $result: math.div($pxOne, $pxTwo) * 100%;
+    @return $result;
+}
+
+// !TO REM:
+@function rem($px) {
+    $result: math.div($px, 16) + rem;
+    @return $result;
+}
+
+// !TO EM:
+@function em($px) {
+    $result: math.div($px, 16) + em;
+    @return $result;
+}
+
+// !Адаптивное свойство (clamp)
+@mixin adaptiveClamp($property, $startSize, $minSize, $widthFrom: $containerWidth, $widthTo: $minWidth, $keepSize: 0) {
+    // Для calc();
+    $addSize: math.div($startSize - $minSize, 16);
+
+    @if ($widthFrom==$containerWidth and $maxWidthContainer==0) {
+        $widthFrom: $maxWidth;
+    }
+
+    @if ($minSize <=0) {
+        $minSize: 0.0001;
+    }
+
+    @if ($startSize <=0) {
+        $startSize: 0.0001;
+    }
+
+    // Брейк-поинты в EM
+    $widthFromMedia: em($widthFrom);
+    $widthToMedia: em($widthTo);
+
+    // Формула плавающего значения
+    // Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+    $slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
+    $yIntersection: -$widthTo * $slope+$minSize;
+    $flyValue: #{rem($yIntersection)}" + "#{$slope * 100}vw;
+
+    // Получение значения свойства
+    $propertyValue: #{"clamp(" rem($minSize) "," $flyValue "," rem($startSize) ")"};
+
+    // Если отрицательные значения
+    @if ($minSize > $startSize) {
+        $propertyValue: #{"clamp(" rem($startSize) "," $flyValue "," rem($minSize) ")"};
+    }
+
+    @if $widthFrom==$containerWidth or $widthFrom==$maxWidth or $keepSize==1 or $keepSize==2 {
+        @media (min-width: $widthFromMedia) {
+            #{$property}: rem($startSize);
+        }
+    }
+
+    @media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
+
+        // Если поддерживается clamp();
+        @supports (#{$property}: $propertyValue) {
+            #{$property}: $propertyValue;
+        }
+
+        // Если не поддерживается clamp();
+        @supports not (#{$property}: $propertyValue) {
+            #{$property}: calc(#{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div($widthFrom, 16) - math.div($widthTo, 16)});
+        }
+    }
+
+    @if $widthTo==$minWidth or $keepSize==1 or $keepSize==3 {
+        @media (max-width: $widthToMedia) {
+            #{$property}: rem($minSize);
+        }
+    }
+}
+
+// !gradient for text
+@mixin textGradient($gradient) {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// !media
+@mixin media($width) {
+    @media (max-width: #{$width + '.98' + px}) {
+        @content;
+    }
+}
+
+// !:not (last-child)
+@mixin notLast() {
+    &:not(:last-child) {
+        @content;
+    }
+}
+
+// !:not (first-child)
+@mixin notFirst() {
+    &:not(:first-child) {
+        @content;
+    }
+}
+
+// !обрезает текст до определенного кол-ва строк, остаток заменяет на 3 точки (...)
+@mixin lineClamp($value) {
+    display: -webkit-box;
+    -webkit-line-clamp: $value;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+// !styled placeholder for TextArea
+@mixin styledPlaceholder($color, $fontSize: inherit, $lineHeight: normal) {
+    &:-moz-placeholder {
+        color: $color;
+        font-size: $fontSize;
+        line-height: $lineHeight;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        font-size: $fontSize;
+        line-height: $lineHeight;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $color;
+        font-size: $fontSize;
+        line-height: $lineHeight;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        font-size: $fontSize;
+        line-height: $lineHeight;
+    }
+}
+
+// !плавное убирание placeholder
+@mixin hidePlaceholder($time: 300, $effect: ease) {
+    &::-webkit-input-placeholder {
+        opacity: 1;
+        transition: opacity #{$time}+ms $effect;
+    }
+
+    &::-moz-placeholder {
+        opacity: 1;
+        transition: opacity #{$time}+ms $effect;
+    }
+
+    &:-moz-placeholder {
+        opacity: 1;
+        transition: opacity #{$time}+ms $effect;
+    }
+
+    &:-ms-input-placeholder {
+        opacity: 1;
+        transition: opacity #{$time}+ms $effect;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        opacity: 0;
+        transition: opacity #{$time}+ms $effect;
+    }
+
+    &:focus::-moz-placeholder {
+        opacity: 0;
+        transition: opacity #{$time}+ms $effect;
+    }
+
+    &:focus:-moz-placeholder {
+        opacity: 0;
+        transition: opacity #{$time}+ms $effect;
+    }
+
+    &:focus:-ms-input-placeholder {
+        opacity: 0;
+        transition: opacity #{$time}+ms $effect;
+    }
+}
+
+// !after-before
+@mixin afterBefore($type, $pos: absolute) {
+    &::#{$type} {
+        content: '';
+        position: $pos;
+        @content
+    }
+}

@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20230916172453" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230916172453">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+    <div class="header__container">
+        <div class="header__wrapper">
+            <a id="logo" href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+            <ul class="header__menu">
+                <li><a href="/sale.html">Продажа</a></li>
+                <li><a href="/rent.html">Аренда</a></li>
+                <li><a href="/blog.html">Блог</a></li>
+                <li><a href="/contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header__panel">
+                <div class="header__socials">
+                    <a href="/"><svg><use href="img/icons/icons.svg#wa"></use></svg></a>
+                    <a href="/"><svg><use href="img/icons/icons.svg#viber"></use></svg></a>
+                    <a href="/"><svg><use href="img/icons/icons.svg#telegram"></use></svg></a>
+                </div>
+                <a href="#modal1" data-fancybox class="header__phone">
+                    <svg><use href="img/icons/icons.svg#phone"></use></svg>
+                    <span>+66861654696</span>
+                </a>
+                <div class="header__compare">
+                    <svg><use href="img/icons/icons.svg#compare"></use></svg>
+                    <span>(0)</span>
+                </div>
+                <div class="header__like">
+                    <svg><use href="img/icons/icons.svg#like"></use></svg>
+                    <span>(0)</span>
+                </div>
+                <div class="header__lang">
+                    <div class="lang__current">
+                        <span>RU</span>
+                        <svg><use href="img/icons/icons.svg#arow"></use></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="header__collapse">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="page">
+            <div data-observ></div>
+            
+            <section class="intro">
+    <div class="intro__container">
+        <div class="intro__wrapper">
+            <h2 class="intro__title">Откройте дверь<br>в свой идеальный дом</h2>
+            <div class="intro__subtitle">Легальное агентство недвижимости<br>в Хуа Хине с 2011 года</div>
+            <ul class="intro__list">
+                <li>
+                    <span>10+</span>
+                    <p>лет опыта</p>
+                </li>
+                <li>
+                    <span>1000+</span>
+                    <p>довольных клиентов</p>
+                </li>
+                <li>
+                    <span>5000+</span>
+                    <p>предложений</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="filter-box">
+                <div class="filter-box__container">
+                    <div class="filter-box__wrapper">
+                        <div class="filter">
+    <div class="filter__wrapper">
+        <label class="filter__search">
+            <svg><use href="img/icons/icons.svg#search"></use></svg>
+            <input type="text" name="" id="" placeholder="Локация, район или застройщик">
+        </label>
+        <div class="filter__selects">
+            <select class="justselect">
+                <option selected="selected" value="jquery">Тип недвижимости</option>
+                <option value="css">CSS3</option>
+                <option value="html">HTML5</option>
+            </select>
+            <select class="justselect">
+                <option selected="selected" value="jquery">Цена</option>
+                <option value="css">CSS3</option>
+                <option value="html">HTML5</option>
+            </select>
+        </div>
+        <div class="filter__switch">
+            <label>
+                <input class="switch-input" name="a" type="radio" checked>
+                <p>Продажа</p>
+            </label>
+            <label>
+                <input class="switch-input" name="a" type="radio">
+                <p>Аренда</p>
+            </label>
+        </div>
+        <button class="filter__btn">Найти</button>
+    </div>
+</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="real-estate">
+    <div class="real-estate__container">
+        <div class="real-estate__wrapper">
+            <h2 class="real-estate__title">Продажа недвижимости в Хуа Хине</h2>
+            <div class="real-estate__tabs">
+                <div class="tabs">
+                    <ul class="tab-links">
+                        <li class="active"><a href="#tab1">Квартиры</a></li>
+                        <li><a href="#tab2">Виллы</a></li>
+                        <li><a href="#tab3">Дома</a></li>
+                        <li><a href="#tab4">Апартаменты</a></li>
+                        <li><a href="#tab5">Коммерческая недвижимость</a></li>
+                    </ul>
+                    <div class="tab-content" id="tab1">
+                        <div class="real-estate__list">
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab2">
+                        <div class="real-estate__list">
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab3">
+                        <div class="real-estate__list">
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="real-estate__link">Посмотреть все</a>
+        </div>
+    </div>
+</section>
+            <section class="real-estate">
+    <div class="real-estate__container">
+        <div class="real-estate__wrapper">
+            <h2 class="real-estate__title">Аренда недвижимости в Хуа Хине</h2>
+            <div class="real-estate__tabs">
+                <div class="tabs">
+                    <ul class="tab-links">
+                        <li class="active"><a href="#tab6">Квартиры</a></li>
+                        <li><a href="#tab7">Виллы</a></li>
+                        <li><a href="#tab8">Дома</a></li>
+                        <li><a href="#tab9">Апартаменты</a></li>
+                        <li><a href="#tab10">Коммерческая недвижимость</a></li>
+                    </ul>
+                    <div class="tab-content" id="tab6">
+                        <div class="real-estate__list">
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab7">
+                        <div class="real-estate__list">
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="tab8">
+                        <div class="real-estate__list">
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                            <div class="card">
+    <div class="card__wrapper">
+        <div class="card__btns">
+            <button class="compare"><svg><use href="img/icons/icons.svg#compare"></use></svg></button>
+            <button class="like"><svg><use href="img/icons/icons.svg#like"></use></svg></button>
+        </div>
+        <div class="card__img">
+            <picture><source srcset="img/card-img/57ef3160337baa433f8d52e6b0c89957.webp" type="image/webp"><img src="img/card-img/57ef3160337baa433f8d52e6b0c89957.png" alt=""></picture>
+        </div>
+        <div class="card__inner">
+            <a href="#" class="card__title">Novel 1-BR Condo at La Casita Hua Hin</a>
+            <div class="card__location">
+                <svg><use href="img/icons/icons.svg#location"></use></svg>
+                <span>Какой-то район, Хуа Хин</span>
+            </div>
+            <ul class="card__list">
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-1"></use></svg>
+                    <span>1</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-2"></use></svg>
+                    <span>282</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-3"></use></svg>
+                    <span>2</span>
+                </li>
+                <li>
+                    <svg><use href="img/icons/icons.svg#card-icon-4"></use></svg>
+                    <span>1</span>
+                </li>
+            </ul>
+            <div class="card__desc">Продается полностью меблированная квартира с 1 спальней и 1 ванной комнатой, площадью 28 квадратных метров, расположенная на 8-м этаже в здании La Casita Hua Hin, в популярном районе Хуа Хин. Пожалуйста, свяжитесь с нами, чтобы запланировать просмотр.</div>
+            <div class="card__price">2 500 000 THB</div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="real-estate__link">Посмотреть все</a>
+        </div>
+    </div>
+</section>
+            <section class="district">
+    <div class="district__container">
+        <div class="district__wrapper">
+            <h2 class="district__title">Районы в Хуа Хине</h2>
+            <div class="district__list">
+                <div class="card-location">
+    <div class="card-location__wrapper">
+        <div class="card-location__img">
+            <picture><source srcset="img/card-img/9b68449165783d6e7e30e489cc1ab87d.webp" type="image/webp"><img src="img/card-img/9b68449165783d6e7e30e489cc1ab87d.jpg" alt=""></picture>
+        </div>
+        <div class="card-location__body">
+            <div class="card-location__title">Центр Хуа Хина</div>
+            <div class="card-location__num">
+                <svg><use href="img/icons/icons.svg#home"></use></svg>
+                <span>45 объектов</span>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="card-location">
+    <div class="card-location__wrapper">
+        <div class="card-location__img">
+            <picture><source srcset="img/card-img/9b68449165783d6e7e30e489cc1ab87d.webp" type="image/webp"><img src="img/card-img/9b68449165783d6e7e30e489cc1ab87d.jpg" alt=""></picture>
+        </div>
+        <div class="card-location__body">
+            <div class="card-location__title">Центр Хуа Хина</div>
+            <div class="card-location__num">
+                <svg><use href="img/icons/icons.svg#home"></use></svg>
+                <span>45 объектов</span>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="card-location">
+    <div class="card-location__wrapper">
+        <div class="card-location__img">
+            <picture><source srcset="img/card-img/9b68449165783d6e7e30e489cc1ab87d.webp" type="image/webp"><img src="img/card-img/9b68449165783d6e7e30e489cc1ab87d.jpg" alt=""></picture>
+        </div>
+        <div class="card-location__body">
+            <div class="card-location__title">Центр Хуа Хина</div>
+            <div class="card-location__num">
+                <svg><use href="img/icons/icons.svg#home"></use></svg>
+                <span>45 объектов</span>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="card-location">
+    <div class="card-location__wrapper">
+        <div class="card-location__img">
+            <picture><source srcset="img/card-img/9b68449165783d6e7e30e489cc1ab87d.webp" type="image/webp"><img src="img/card-img/9b68449165783d6e7e30e489cc1ab87d.jpg" alt=""></picture>
+        </div>
+        <div class="card-location__body">
+            <div class="card-location__title">Центр Хуа Хина</div>
+            <div class="card-location__num">
+                <svg><use href="img/icons/icons.svg#home"></use></svg>
+                <span>45 объектов</span>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="services">
+    <div class="services__container">
+        <div class="services__wrapper">
+            <h2 class="services__title">Услуги от <span>HuaHin4Russians</span></h2>
+            <div class="services__list">
+                <div class="service" style="background-image: url('img/service-1.png');">
+                    <div class="service__wrapper">
+                        <a href="#" class="service__title">
+                            <span>Трансфер в/из аэропорта</span>
+                            <svg><use href="img/icons/icons.svg#solar_arrow-up-linear"></use></svg>
+                        </a>
+                        <div class="service__desc">Организуем трансфер из аэропортов Суварнабхуми или Дон Муенг в Бангкоке в Хуа Хин, Паттайю или обратно, а так же в любой другой город Таиланда.</div>
+                    </div>
+                </div>
+                <div class="service" style="background-image: url('img/service-2.png');">
+                    <div class="service__wrapper">
+                        <a href="#" class="service__title">
+                            <span>Продажа/ Аренда недвижимости</span>
+                            <svg><use href="img/icons/icons.svg#solar_arrow-up-linear"></use></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="service" style="background-image: url('img/service-3.png');">
+                    <div class="service__wrapper">
+                        <a href="#" class="service__title">
+                            <span>Организация экскурсий</span>
+                            <svg><use href="img/icons/icons.svg#solar_arrow-up-linear"></use></svg>
+                        </a>
+                        <div class="service__desc">Данный вид экскурсий — экскурсии с русскоязычным гидом. Все экскурсии проводятся либо индивидуально, либо в группе до 10 человек.</div>
+                    </div>
+                </div>
+                <div class="service" style="background-image: url('img/service-4.png');">
+                    <div class="service__wrapper">
+                        <a href="#" class="service__title">
+                            <span>Прокат автомобиля</span>
+                            <svg><use href="img/icons/icons.svg#solar_arrow-up-linear"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="advantages">
+    <div class="advantages__container">
+        <div class="advantages__wrapper">
+            <h2 class="advantages__title">Почему <span>HuaHin4Russians</span></h2>
+            <div class="advantages__list">
+                <div class="advantage">
+                    <div class="advantage__wrapper">
+                        <svg><use href="img/icons/icons.svg#advantage-1"></use></svg>
+                        <span>Широкий выбор объектов</span>
+                        <p>Наш сайт предлагает обширную базу недвижимости для продажи и аренды. Независимо от того, ищете ли вы жилую недвижимость, коммерческие помещения или участки земли - у нас есть идеальные варианты для каждого клиента</p>
+                    </div>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__wrapper">
+                        <svg><use href="img/icons/icons.svg#advantage-2"></use></svg>
+                        <span>Профессиональные услуги</span>
+                        <p>Мы предоставляем профессиональные услуги с опытными агентами недвижимости, которые помогут вам сделать правильный выбор. Наша команда готова ответить на все вопросы и провести вас через каждый этап сделки</p>
+                    </div>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__wrapper">
+                        <svg><use href="img/icons/icons.svg#advantage-3"></use></svg>
+                        <span>Выгодные цены</span>
+                        <p>Мы гордимся тем, что предлагаем нашим клиентам конкурентоспособные цены на недвижимость. Мы стараемся подобрать оптимальные варианты, чтобы каждый мог обрести свой уголок мечты без излишних затрат</p>
+                    </div>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__wrapper">
+                        <svg><use href="img/icons/icons.svg#advantage-4"></use></svg>
+                        <span>Надежность и безопасность</span>
+                        <p>Ваша безопасность и удовлетворенность - наш главный приоритет. Мы работаем с проверенными объектами и заботимся о каждой сделке, чтобы вы могли быть уверены в качестве и надежности предоставляемых нами услуг</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="articles">
+    <div class="articles__container">
+        <div class="articles__wrapper">
+            <h2 class="articles__title">Полезные статьи</h2>
+            <div class="articles__list">
+                <a href="#" class="article">
+    <span class="article__wrapper">
+        <span class="article__img"><picture><source srcset="img/55fe6c8d237e0ed39aeb1d479c2214e6.webp" type="image/webp"><img src="img/55fe6c8d237e0ed39aeb1d479c2214e6.png" alt=""></picture></span>
+        <span class="article__body">
+            <span class="article__date">8 июля, 2023</span>
+            <h4 class="article__title">Изменения в оформлении долгосрочной визы Thailand Elite.</h4>
+        </span>
+    </span>
+</a>
+                <a href="#" class="article">
+    <span class="article__wrapper">
+        <span class="article__img"><picture><source srcset="img/55fe6c8d237e0ed39aeb1d479c2214e6.webp" type="image/webp"><img src="img/55fe6c8d237e0ed39aeb1d479c2214e6.png" alt=""></picture></span>
+        <span class="article__body">
+            <span class="article__date">8 июля, 2023</span>
+            <h4 class="article__title">Изменения в оформлении долгосрочной визы Thailand Elite.</h4>
+        </span>
+    </span>
+</a>
+                <a href="#" class="article">
+    <span class="article__wrapper">
+        <span class="article__img"><picture><source srcset="img/55fe6c8d237e0ed39aeb1d479c2214e6.webp" type="image/webp"><img src="img/55fe6c8d237e0ed39aeb1d479c2214e6.png" alt=""></picture></span>
+        <span class="article__body">
+            <span class="article__date">8 июля, 2023</span>
+            <h4 class="article__title">Изменения в оформлении долгосрочной визы Thailand Elite.</h4>
+        </span>
+    </span>
+</a>
+                <a href="#" class="article">
+    <span class="article__wrapper">
+        <span class="article__img"><picture><source srcset="img/55fe6c8d237e0ed39aeb1d479c2214e6.webp" type="image/webp"><img src="img/55fe6c8d237e0ed39aeb1d479c2214e6.png" alt=""></picture></span>
+        <span class="article__body">
+            <span class="article__date">8 июля, 2023</span>
+            <h4 class="article__title">Изменения в оформлении долгосрочной визы Thailand Elite.</h4>
+        </span>
+    </span>
+</a>
+            </div>
+            <a href="#" class="articles__link">Посмотреть все</a>
+        </div>
+    </div>
+</section>
+            <section class="block-text">
+    <div class="block-text__container">
+        <div class="block-text__wrapper">
+            <h2 class="block-text__title">Хуа Хин для русских — агентство недвижимости в Хуа Хине с 2011 года</h2>
+            <div class="block-text__description">
+                <p>Хуа Хин — город на берегу Сиамского залива в Королевстве Таиланд можно считать идеальным местом для покупки или аренды имущества, не только в течение длительного отдыха, но и в качестве долгосрочных инвестиций. Хуа Хин (или Хуахин, Hua Hin) имеет выгодное месторасположение, с теплым климатом, поэтому не удивительно, что рынок недвижимости растет здесь из года в год. Но не смотря на это, характер города и его атмосфера не изменились.</p>
+                <p>Если Вы мечтает побывать в раю, то все это Вы найдете здесь, включая <a href="#">апартаменты, квартиры</a>, пляжные <a href="#">виллы и таунхаусы</a>. Наши агенты изучили все тонкости <a href="#">покупки</a> и <a href="#">аренды</a> недвижимости в Хуа Хине, мы поможем Вам свести к минимуму осложнения, которые могут возникнуть. Если Вы намерены жить здесь или просто приезжать на отдых, мы подберем недвижимость в Хуа Хине, учитывая Ваш вкус и бюджет. Есть много вариантов жилья <a href="#">с шикарным видом на море</a> или, например, <a href="#">на горы</a>!</p>
+                <p>Если Вы решили переехать жить в Таиланд, в Хуа Хин и думаете о возможности открытия собственного бизнеса, мы поможем Вам не только консультацией и оформлением документов, но и выбором правильного объекта ведения бизнеса, чтобы он приносил Вам моральное и финансовое удовлетворение. Для получения дополнительной информации, <a href="#">свяжитесь с представителями HuaHin4Russians</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrapper">
+            <div class="footer__col">
+                <a href="/" class="footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a>
+                <ul class="footer__menu">
+                    <li><a href="#">Продажа</a></li>
+                    <li><a href="#">Аренда</a></li>
+                    <li><a href="#">Застройщики ?</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__boxtitle">Сервисы</div>
+                <ul class="footer__menu">
+                    <li><a href="#">Трансфер от/до аеропорта</a></li>
+                    <li><a href="#">Прокат автомобилей</a></li>
+                    <li><a href="#">Организация экскурсий</a></li>
+                    <li><a href="#">Прокат мотобайков</a></li>
+                    <li><a href="#">Аренда/покупка недвижимости</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__boxtitle">Недвижимость Хуа Хина</div>
+                <ul class="footer__menu">
+                    <li><a href="#">Аренда домов</a></li>
+                    <li><a href="#">Аренда квартир</a></li>
+                    <li><a href="#">Продажа домов</a></li>
+                    <li><a href="#">Продажа квартир</a></li>
+                    <li><a href="#">Продажа бизнеса</a></li>
+                    <li><a href="#">Посёлки и кондоминимумы</a></li>
+                    <li><a href="#">Новые проекты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col footer__contacts">
+                <a href="#" class="footer__btn">Найти недвижимость</a>
+                <a href="tel:+66861654696" class="footer__phone">
+                    <svg><use href="img/icons/icons.svg#phone"></use></svg>
+                    <span>+66861654696</span>
+                </a>
+                <div class="footer__socials">
+                    <a href="/"><svg><use href="img/icons/icons.svg#wa"></use></svg></a>
+                    <a href="/"><svg><use href="img/icons/icons.svg#viber"></use></svg></a>
+                    <a href="/"><svg><use href="img/icons/icons.svg#telegram"></use></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+        <h2 class="modal__title">Отправить сообщение</h2>
+        <span class="modal__close modal-close"><svg><use href="img/icons/icons.svg#close"></use></svg></span>
+        <form class="form">
+            <div class="form__fields">
+                <label for="" class="form__box">
+                    <input type="text" placeholder="Имя*" required>
+                    <!-- <span class="form__error">Wanring</span> -->
+                </label>
+                <label for="" class="form__box">
+                    <input type="email" placeholder="Email*" required>
+                </label>
+                <label for="" class="form__box">
+                    <input type="tel" placeholder="Телефон*" required>
+                </label>
+                <label for="" class="form__box">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение*" required></textarea>
+                </label>
+                <label for="" class="form__box">
+                    <button type="submit">Отправить</button>
+                </label>
+            </div>
+
+            <div class="form__success">
+                <svg><use href="img/icons/icons.svg#email-successfully"></use></svg>
+                <span>Ваше сообщение успешно отправлено!</span>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js?_v=20230916172453" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20230916172453" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230916172453"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230916172453"></script>
+<script src="js/app.js?_v=20230916172453"></script>
+</body>
+</html>
