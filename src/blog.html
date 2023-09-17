@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Блог | Последние статьи"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/base/header.html', {})
+        <main class="page">
+            <div data-observ></div>
+
+            <div class="page__container">
+                @@include('html/elements/breadcrumb.html')
+                @@include('html/elements/title.html', {
+                    title: 'Последние статьи'
+                })
+
+                <div class="page__content">
+                    @@include('html/pages/blog.html')
+                </div>
+            </div>
+        </main>
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/elements/modal.html')
+
+    @@include('html/base/script.html', {})
+</body>
+</html>

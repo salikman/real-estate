@@ -1,0 +1,38 @@
+/* Pagination links */
+.pagination {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 5px;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $firstAccentColor;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 1px solid $firstAccentColor;
+        transition: $standartTrans;
+        font-size: 18px;
+
+        &.active {
+            background-color: $firstAccentColor;
+            color: white;
+        }
+
+        &:hover:not(.active) {background-color: #ddd;}
+
+        svg {
+            width: 8px;
+            height: 17px;
+        }
+
+        &.prev {
+            transform: rotate(180deg);
+        }
+        &.prev, &.next {
+            border: none;
+        }
+    }
+}
