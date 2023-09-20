@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Продажа апартаментов в новом комплексе Sasara HuaHin Beachfront Residence | Блог>"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/base/header.html', {})
+        <main class="page">
+            <div data-observ></div>
+
+            <div class="page__container">
+                @@include('html/elements/breadcrumb.html')
+                @@include('html/elements/title.html', {
+                    title: 'Продажа апартаментов в новом комплексе Sasara HuaHin Beachfront Residence'
+                })
+
+                <div class="page__content">
+                    @@include('html/pages/blog-open.html')
+                </div>
+            </div>
+
+            @@include('html/sections/district.html', {
+                title: 'Рекомендуем арендовать квартиры и виллы в лучших посёлках Хуа Хина'
+            })
+        </main>
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/elements/modal.html')
+
+    @@include('html/base/script.html', {})
+</body>
+</html>

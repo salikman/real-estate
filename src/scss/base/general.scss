@@ -97,4 +97,12 @@ body {
     &_start {
         padding-top: rem($headerHeight);
     }
+
+    &_header {
+        .filter {
+            background: url('../img/bg-header.png') no-repeat center / cover;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
 }

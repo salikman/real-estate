@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Продажа квартир в Хуа Хине>"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/base/header.html', {})
+        <main class="page">
+            <div data-observ></div>
+
+            <div class="page_header">
+                @@include('html/elements/filter.html')
+            </div>
+
+            <div class="page__container">
+                @@include('html/elements/breadcrumb.html')
+                @@include('html/elements/title.html', {
+                    title: 'Продажа квартир в Хуа Хине'
+                })
+
+                <div class="page__content">
+                    @@include('html/pages/apartments.html')
+                </div>
+            </div>
+        </main>
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/elements/modal.html')
+
+    @@include('html/base/script.html', {})
+</body>
+</html>
