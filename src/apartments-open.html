@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Novel 1-BR Condo at La Casita Hua Hin"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/base/header.html', {})
+        <main class="page">
+            <div data-observ></div>
+
+            <div class="page__container">
+                @@include('html/elements/breadcrumb.html')
+                @@include('html/elements/title.html', {
+                    title: 'Novel 1-BR Condo at La Casita Hua Hin'
+                })
+
+                <div class="page__content">
+                    @@include('html/pages/apartments-open.html')
+                </div>
+            </div>
+        </main>
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/elements/modal.html')
+
+    @@include('html/base/script.html', {})
+
+    <script>
+          var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 10,
+              slidesPerView: 4,
+              freeMode: true,
+              watchSlidesProgress: true,
+              breakpoints: {
+                991: {
+                  direction: "vertical",
+                  spaceBetween: 20,
+                  slidesPerView: 2,
+                },
+              },
+            });
+        var swiper2 = new Swiper(".mySwiper2", {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+    </script>
+</body>
+</html>
