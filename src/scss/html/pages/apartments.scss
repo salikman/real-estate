@@ -1,5 +1,6 @@
 .page {
     &__apartments {
+        position: relative;
         margin-bottom: 100px;
 
         @media (max-width: 991px) {
@@ -56,12 +57,26 @@
             }
         }
 
+        &.active-filter {
+            .page__apartments-filter {
+                transform: translateX(0);
+            }
+        }
         &-filter {
             margin-bottom: 20px;
             padding: 30px 25px 40px;
 
             @media (max-width: 991px) {
-                display: none;
+                position: fixed;
+                top: 74px;
+                left: 0;
+                transform: translateX(-100%);
+                z-index: 11;
+                width: 100%;
+                height: 100vh;
+                padding: 0 25px;
+                background: white;
+                transition: $standartTrans;
             }
         }
 
@@ -70,19 +85,108 @@
         }
 
         &-list {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            position: relative;
 
-            @media (max-width: 1366px) {
-                grid-template-columns: repeat(3, 1fr);
+            &.items-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+    
+                @media (max-width: 1366px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                @media (max-width: 991px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @media (max-width: 475px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
             }
-            @media (max-width: 991px) {
-                grid-template-columns: repeat(2, 1fr);
+            &.items-list, &.items-map {
+                @media(min-width: 992px) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .card {
+                        &__wrapper {
+                            flex-direction: row;
+                        }
+
+                        &__img {
+                            width: 25%;
+                            height: 220px;
+                            padding-bottom: 0;
+                            border-top-right-radius: 0;
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                        }
+
+                        &__inner {
+                            width: 75%;
+                            justify-content: space-between;
+                            gap: 11px;
+                        }
+
+                        &__title {
+                            flex: 1;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
             }
-            @media (max-width: 475px) {
-                grid-template-columns: repeat(1, 1fr);
+
+            &.items-map {
+                @media(min-width: 992px) {
+                    width: 100%;
+                    padding-right: 42%;
+
+                    .page__apartments-map {
+                        display: block;
+                    }
+                }
             }
+        }
+
+        &-map {
+            position: absolute;
+            left: 60%;
+            top: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-fixed {
+            position: fixed;
+            bottom: 50px;
+            left: 0;
+            z-index: 10;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            width: 100%;
+            padding: 0 rem($mainOffset);
+
+            a {
+                display: flex;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex: 1 0 0;
+                background: $firstAccentColor;
+                border-radius: 5px;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            @media (min-width: 992px) {display: none;}
         }
     }
 
@@ -410,62 +514,6 @@
                 background: #FFF;
                 box-shadow: 0px 0px 6px 1px rgba(163, 175, 205, 0.30);
                 padding: 30px 20px;
-
-                .form {
-                    &__wrapper {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                    }
-
-                    &__title {
-                        @include adaptiv-font(24, 20);
-                    }
-
-                    &__input {
-                        width: 100%;
-
-                        input {
-                            width: 100%;
-                            padding: 10px 20px;
-                            border-radius: 5px;
-                            border: 1px solid $firstAccentColor;
-                            font-size: 16px;
-
-                            &::placeholder {
-                                color: #686868;
-                            }
-                        }
-                    }
-
-                    &__textarea {
-                        width: 100%;
-
-                        textarea {
-                            width: 100%;
-                            height: 117px;
-                            padding: 10px 20px;
-                            border-radius: 5px;
-                            border: 1px solid $firstAccentColor;
-                            resize: none;
-                        }
-                    }
-
-                    &__button {
-                        button {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 100%;
-                            padding: 10px 20px;
-                            border-radius: 5px;
-                            border: 1px solid $firstAccentColor;
-                            background: $firstAccentColor;
-                            color: white;
-                            font-size: 18px;
-                        }
-                    }
-                }
             }
 
             &__map {

@@ -160,6 +160,33 @@
             gap: 20px;
         }
 
+        &__title {
+            display: none;
+
+            @media (max-width: 991px) {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                justify-content: space-between;
+                width: 100%;
+
+                p {
+                    font-size: 24px;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
         .title {
             display: inline-block;
             margin-bottom: 10px;

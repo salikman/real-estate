@@ -1,6 +1,6 @@
 body {
 
-    &.lock {
+    &.lock, &.page-lock {
         overflow: hidden;
         touch-action: none;
     }
@@ -83,6 +83,10 @@ body {
     position: relative;
     z-index: 2;
     flex: 1 1 auto;
+
+    @media (max-width: 991px) {
+        padding-top: 74px;
+    }
 
     [data-observ] {
         position: absolute;
